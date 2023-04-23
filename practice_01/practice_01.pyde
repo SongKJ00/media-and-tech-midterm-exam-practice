@@ -21,7 +21,7 @@ def setup():
     
 # 마우스가 원 안에 있는 경우, True 반환
 def isMouseInCircle(circleX, circleY):
-    return dist(mouseX, mouseY, circleX, circleY) <= circleDiam
+    return dist(mouseX, mouseY, circleX, circleY) <= circleDiam / 2
     
 def draw():
     circles = [circle1, circle2, circle3]
